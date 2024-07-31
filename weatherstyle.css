@@ -1,0 +1,38 @@
+* {
+  font-family: "Blinker", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.weather-card {
+  background-color: #172a3a;
+  box-shadow: 0px 20px 30px 0px #172a3a1a;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.climate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  background-color: #508991;
+  border-top: 2px solid #d1c7cfb0;
+  padding: 20px;
+}
