@@ -12,21 +12,53 @@
       rel="stylesheet"
     />
     <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/search.css"
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/pin.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/thermostat.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/drop-opacity.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="weather-card">
-      <div class="back">
-        <h6>Weather App</h6>
+    <div class="weather-container">
+      <div class="weather-card">
+        <div class="back">
+          <i class="gg-arrow-left"></i>
+          <h2>Weather App</h2>
+        </div>
+        <div class="climate">
+          <div class="location"><i class="gg-pin"></i>Lagos</div>
+          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <p class="description">Shower rain</p>
+          <p class="temp">31 C</p>
+        </div>
       </div>
-      <div class="climate"><div class="location">lagos</div></div>
       <div class="footer">
-        <div class="feels-like">Feels like</div>
-        <div class="humidity">Humidity</div>
+        <div class="feels-like">
+          <i class="gg-thermostat"></i>
+          <div class="texts">
+            <p>23 C</p>
+            <p>Feels like</p>
+          </div>
+        </div>
+        <div class="humidity">
+          <i class="gg-drop-opacity"></i>
+          <div class="texts">
+            <p>23 %</p>
+            <p>Humidity</p>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="weatherscript.js"></script>
   </body>
 </html>
