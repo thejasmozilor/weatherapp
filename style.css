@@ -82,6 +82,8 @@ h1 {
 }
 
 .search-text {
+  text-align: center;
+
   background-color: #eaeaea;
   border: none;
   color: #508991;

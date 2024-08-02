@@ -27,38 +27,54 @@
       href="https://unpkg.com/css.gg@2.0.0/icons/css/drop-opacity.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <img class="bottom-img" src="image2.png" alt="" />
+
     <div class="weather-container">
       <div class="weather-card">
+        <i class="fa-solid fa-arrow-left back-arrow"></i>
         <div class="back">
-          <i class="gg-arrow-left"></i>
           <h2>Weather App</h2>
         </div>
         <div class="climate">
-          <div class="location"><i class="gg-pin"></i>Lagos</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="location">
+            <i class="gg-pin"></i>
+            <span>Lagos</span>
+          </div>
+          <img
+            class="weather-img"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+          />
           <p class="description">Shower rain</p>
-          <p class="temp">31 C</p>
+          <p class="temp"><span>31</span> C</p>
         </div>
       </div>
       <div class="footer">
         <div class="feels-like">
-          <i class="gg-thermostat"></i>
+          <img class="footer-icon" src="thermmostat.svg" alt="" />
           <div class="texts">
-            <p>23 C</p>
-            <p>Feels like</p>
+            <p><span></span> C</p>
+            <p class="thinner">Feels like</p>
           </div>
         </div>
         <div class="humidity">
-          <i class="gg-drop-opacity"></i>
+          <img class="footer-icon" src="drop.svg" alt="" />
           <div class="texts">
-            <p>23 %</p>
-            <p>Humidity</p>
+            <p><span></span>%</p>
+            <p class="thinner">Humidity</p>
           </div>
         </div>
       </div>
     </div>
-    <script type="module" src="weatherscript.js"></script>
+    <script src="weatherscript.js"></script>
   </body>
 </html>
