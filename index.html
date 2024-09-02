@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://mojoview.com/client_data/0b19cf2d3cf8d03b02db7ba3/script.js"
+    ></script>
+    <!-- End cookieyes banner -->
+    <script>
+      window.uetq = window.uetq || [];
+      window.uetq.push("consent", "default", {
+        ad_storage: "denied",
+      });
+
+      document.addEventListener(
+        "cookieyes_consent_update",
+        function (eventData) {
+          const data = eventData.detail;
+          if (data.accepted.includes("analytics")) {
+            window.uetq = window.uetq || [];
+            window.uetq.push("consent", "update", {
+              ad_storage: "granted",
+            });
+          }
+        }
+      );
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -43,12 +69,5 @@
       </div>
     </div>
     <script src="indexscript.js"></script>
-    <!-- Start cookieyes banner -->
-    <script
-      id="cookieyes"
-      type="text/javascript"
-      src="https://mojoview.com/client_data/0b19cf2d3cf8d03b02db7ba3/script.js"
-    ></script>
-    <!-- End cookieyes banner -->
   </body>
 </html>
