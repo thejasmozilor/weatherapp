@@ -3,14 +3,21 @@
   <head>
     <link rel='stylesheet' id='elementor-post-7-css' href='https://www.affordablealaskatravel.com/wp-content/uploads/elementor/css/post-7.css?ver=1726241883' media='all'/>
 <script>
-
+    // Fetch the JSON data
+    fetch('https://directory.cookieyes.com/api/v1/ip')
+      .then(response => response.json())  // Parse the response as JSON
+      .then(data => {
+        // Check for the region
+        if (data.continent === "EU") {
+          // Create a style tag
           const styleTag = document.createElement('style');
-          // Add the CSS rule to hide the consent container
-          styleTag.textContent = '.cky-consent-container { display: none !important; }';
+          // Add the CSS rule to hide the consent container and overlay
+          styleTag.textContent = '.cky-consent-container, .cky-overlay { display: none !important; }';
           // Append the style tag to the head
           document.head.appendChild(styleTag);
-   
-
+        }
+      })
+      .catch(error => console.error('Error fetching the data:', error));
 </script>
   	<script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/0b19cf2d3cf8d03b02db7ba3/script.js"></script>
 
